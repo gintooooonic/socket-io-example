@@ -1,5 +1,3 @@
-const socket = io();
-
 const chatList = document.querySelector("#chatList");
 const chatForm = document.querySelector("#chatForm");
 const chatMsg = document.querySelector("#chatMsg");

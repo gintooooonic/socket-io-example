@@ -6,3 +6,14 @@ function fmtDate(date) {
   const min = m < 10 ? "0" + m : m;
   return `${h < 12 ? "오전" : "오후"} ${hour}:${min}`;
 }
+
+const setCookie = (name, value, exp) => {
+  const date = new Date();
+  date.setTime(date.getTime() + exp * 1000 * 60 * 60 * 24);
+  document.cookie = `${name}=${value};expires=${date.toUTCString()};path=/`;
+};
+
+const getCookie = (name) => {
+  const value = document.cookie.match("(^|;) ?" + name + "=([^;]*)(;|$)");
+  return value ? value[2] : null;
+};

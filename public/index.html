@@ -11,6 +11,16 @@
     <title>Town.app</title>
   </head>
   <body>
+    <script>
+      let name = getCookie("name");
+      while (!name) {
+        name = prompt("사용할 닉네임을 입력해주세요.");
+        if (name) {
+          setCookie("name", name, 30);
+          break;
+        }
+      }
+    </script>
     <div id="sidebar">
       <header>🏠 Town.app</header>
       <ul id="chatList"></ul>
@@ -22,14 +32,18 @@
         <a href="https://github.com/gintooooonic/socket-io-example">GitHub</a>
       </footer>
     </div>
-    <div id="content">
+    <div id="content" tabindex="0">
       <canvas id="map" width="400" height="300"></canvas>
     </div>
 
     <!-- Socket.IO -->
     <script src="/socket.io/socket.io.js"></script>
-    <script src="javascripts/chat.js"></script>
+    <script>
+      const socket = io();
+    </script>
 
+    <!-- Chat -->
+    <script src="javascripts/chat.js"></script>
     <!-- Map -->
     <script src="javascripts/map.js"></script>
   </body>
