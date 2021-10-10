@@ -1,2 +1,3 @@
 # socket-io-example
-Socket.IO로 채팅 구현해보기
+
+Socket.IO & Canvas API로 간단한 게임 만들어보기

@@ -1,0 +1,24 @@
+{
+  "name": "socket-io-example",
+  "version": "1.0.0",
+  "description": "Socket.IO & Canvas API로 간단한 게임 만들어보기",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gintooooonic/socket-io-example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gintooooonic/socket-io-example/issues"
+  },
+  "homepage": "https://github.com/gintooooonic/socket-io-example#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.2.0"
+  }
+}
