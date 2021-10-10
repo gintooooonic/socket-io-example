@@ -4,7 +4,8 @@
   "description": "Socket.IO & Canvas API로 간단한 게임 만들어보기",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
