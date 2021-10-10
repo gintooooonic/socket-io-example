@@ -38,4 +38,5 @@ socket.on("message", (msg) => {
     </li>
   `;
   chatList.insertAdjacentHTML("beforeend", item);
+  chatList.scrollTop = chatList.scrollHeight;
 });
