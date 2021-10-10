@@ -1,0 +1,9 @@
+#content {
+  min-width: 100vh;
+  min-height: 100vh;
+  padding-left: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+}

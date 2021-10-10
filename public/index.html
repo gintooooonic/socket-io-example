@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/stylesheets/style.css" />
     <link rel="stylesheet" href="/stylesheets/sidebar.css" />
+    <link rel="stylesheet" href="/stylesheets/content.css" />
     <script src="javascripts/util.js"></script>
     <script src="javascripts/index.js"></script>
     <title>Town.app</title>
@@ -21,10 +22,15 @@
         <a href="https://github.com/gintooooonic/socket-io-example">GitHub</a>
       </footer>
     </div>
-    <div id="map"></div>
+    <div id="content">
+      <canvas id="map" width="400" height="300"></canvas>
+    </div>
 
     <!-- Socket.IO -->
     <script src="/socket.io/socket.io.js"></script>
     <script src="javascripts/chat.js"></script>
+
+    <!-- Map -->
+    <script src="javascripts/map.js"></script>
   </body>
 </html>
