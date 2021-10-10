@@ -9,6 +9,7 @@ const submitChat = () => {
     socket.emit("message", {
       text: chatMsg.value,
       date: new Date(),
+      name: getCookie("name"),
     });
     chatMsg.value = "";
   }
@@ -30,7 +31,7 @@ socket.on("message", (msg) => {
   const item = `
     <li>
       <div>
-        <p>사용자</p>
+        <p>${msg.name}</p>
         <p>${fmtDate(msg.date)}</p>
       </div>
       <pre>${msg.text}</pre>
