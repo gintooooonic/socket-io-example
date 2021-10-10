@@ -65,6 +65,9 @@ const render = (players) => {
 };
 
 const content = document.querySelector("#content");
+
+content.focus();
+
 content.addEventListener("keydown", (event) => {
   const code = event.code;
   const dist = 5;
