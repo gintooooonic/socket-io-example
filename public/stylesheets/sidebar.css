@@ -1,0 +1,70 @@
+#sidebar {
+  width: 300px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+  background-color: #222222;
+}
+
+#sidebar > header {
+  margin: 20px 0;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#sidebar > footer {
+  margin: 8px 0;
+}
+
+#sidebar > footer > a {
+  color: #ffffff;
+  font-size: 12px;
+}
+
+#chat {
+  width: 280px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+#chatList {
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+  background-color: #fff6f5;
+  border-radius: 10px 10px 0 0;
+}
+
+#chatForm {
+  height: 80px;
+  display: flex;
+  justify-content: stretch;
+}
+
+#chatForm > textarea {
+  padding: 6px;
+  flex-grow: 1;
+  resize: none;
+  border: 0;
+  border-radius: 0 0 0 10px;
+  font-size: 14px;
+}
+
+#chatForm > input[type="submit"] {
+  width: 40px;
+  border: 0;
+  border-radius: 0 0 10px 0;
+  background-color: #fa8072;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+}
