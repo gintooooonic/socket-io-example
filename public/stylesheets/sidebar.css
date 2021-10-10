@@ -49,7 +49,8 @@
   background-color: #ffffff;
 }
 
-#chatList > li p {
+#chatList > li p,
+#chatList > li pre {
   margin: 5px;
 }
 
@@ -60,7 +61,7 @@
   font-weight: bold;
 }
 
-#chatList > li > p {
+#chatList > li > pre {
   font-size: 15px;
 }
 

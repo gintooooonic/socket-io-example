@@ -10,6 +10,12 @@ app.get("/", (req, res) => {
   res.sendFile("index.html");
 });
 
+io.on("connection", (socket) => {
+  socket.on("message", (msg) => {
+    io.emit("message", msg);
+  });
+});
+
 http.listen(port, () => {
   console.log(`Server running at port ${port}`);
 });

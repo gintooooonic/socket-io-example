@@ -5,22 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/stylesheets/style.css" />
     <link rel="stylesheet" href="/stylesheets/sidebar.css" />
+    <script src="javascripts/util.js"></script>
     <title>Town.app</title>
   </head>
   <body>
     <div id="sidebar">
       <header>🏠 Town.app</header>
-      <ul id="chatList">
-        <li>
-          <div>
-            <p>사용자 1</p>
-            <p>오후 5:30</p>
-          </div>
-          <p>안녕하세요! 만나서 반갑습니다.</p>
-        </li>
-      </ul>
+      <ul id="chatList"></ul>
       <form id="chatForm">
-        <textarea name="msg" placeholder="메시지를 입력하세요."></textarea>
+        <textarea id="chatMsg" placeholder="메시지를 입력하세요."></textarea>
         <input type="submit" value="전송" />
       </form>
       <footer>
@@ -28,5 +21,9 @@
       </footer>
     </div>
     <div id="map"></div>
+
+    <!-- Socket.IO -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="javascripts/chat.js"></script>
   </body>
 </html>
